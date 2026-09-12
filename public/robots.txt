@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dr-saumya-gupta.vercel.app/sitemap.xml
