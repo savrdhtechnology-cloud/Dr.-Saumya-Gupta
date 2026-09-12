@@ -102,7 +102,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .about-grid { display: grid; grid-template-columns: .78fr 1.35fr; align-items: center; gap: clamp(50px, 8vw, 110px); }
 .portrait-card { position: relative; }
 .portrait-card::before { content: ""; position: absolute; inset: -18px 34px 34px -18px; z-index: -1; border-radius: var(--radius); background: var(--blue-100); }
-.portrait-card img { width: 100%; aspect-ratio: .82; border-radius: var(--radius); object-fit: cover; object-position: center top; box-shadow: var(--shadow); }
+.portrait-card img { width: 100%; aspect-ratio: 4 / 5; border-radius: var(--radius); object-fit: cover; object-position: center; box-shadow: var(--shadow); }
 .portrait-label { position: absolute; right: -30px; bottom: 26px; min-width: 225px; padding: 15px 20px; border-radius: 14px; background: #fff; box-shadow: var(--shadow); }
 .portrait-label span, .portrait-label strong { display: block; }
 .portrait-label span { color: var(--teal); font-size: .76rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
