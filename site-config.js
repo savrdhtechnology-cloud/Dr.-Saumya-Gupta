@@ -1,3 +1,5 @@
+import "./achievements.js";
+
 export const siteConfig = {
   doctor: {
     name: "Dr. Saumya Gupta",
