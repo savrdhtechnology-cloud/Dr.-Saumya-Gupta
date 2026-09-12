@@ -149,7 +149,7 @@ function setupGallery() {
   function openItem(item) {
     visibleItems = items.filter((galleryItem) => !galleryItem.hidden);
     activeIndex = visibleItems.indexOf(item);
-    image.src = item.dataset.src;
+    image.src = $("img", item).currentSrc || $("img", item).src;
     image.alt = item.dataset.alt;
     caption.textContent = item.dataset.alt;
     lightbox.showModal();
@@ -158,7 +158,7 @@ function setupGallery() {
   function move(direction) {
     activeIndex = (activeIndex + direction + visibleItems.length) % visibleItems.length;
     const item = visibleItems[activeIndex];
-    image.src = item.dataset.src;
+    image.src = $("img", item).currentSrc || $("img", item).src;
     image.alt = item.dataset.alt;
     caption.textContent = item.dataset.alt;
   }
